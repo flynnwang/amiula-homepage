@@ -1,0 +1,57 @@
+---
+layout: default
+title: Amiula's Homepage
+---
+
+<div class="container-fluid">
+        <!-- Content Area -->
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 content row">
+            <!--<h1>Main Content Area</h1>-->
+            <!--<p>This is where the main content of the webpage will go.</p>-->
+
+            <div class="col-4 col-md-4 mb-3 grid-item">
+                <img src="https://images.squarespace-cdn.com/content/v1/63c94ecadf6c2031661e8f11/1684837834471-O7HCKXPOL0PMQSJN7ISS/FEN1.JPG" data-fancybox="gallery" class="img-fluid" alt="Image 1" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('https://images.squarespace-cdn.com/content/v1/63c94ecadf6c2031661e8f11/1674575480235-5HTJSYD3E5NRJ4D2C9ZY/ROOM.jpg')">
+            </div>
+            <div class="col-4 col-md-4 mb-3 grid-item">
+                <img src="https://images.squarespace-cdn.com/content/v1/63c94ecadf6c2031661e8f11/1674575480235-5HTJSYD3E5NRJ4D2C9ZY/ROOM.jpg" data-fancybox="gallery" class="img-fluid" alt="Image 2" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('https://images.squarespace-cdn.com/content/v1/63c94ecadf6c2031661e8f11/1674575480235-5HTJSYD3E5NRJ4D2C9ZY/ROOM.jpg')">
+            </div>
+            <div class="col-4 col-md-4 mb-3 grid-item">
+                <img src="https://images.squarespace-cdn.com/content/v1/63c94ecadf6c2031661e8f11/1684837834471-O7HCKXPOL0PMQSJN7ISS/FEN1.JPG" data-fancybox="gallery" class="img-fluid" alt="Image 1" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('https://images.squarespace-cdn.com/content/v1/63c94ecadf6c2031661e8f11/1674575480235-5HTJSYD3E5NRJ4D2C9ZY/ROOM.jpg')">
+            </div>
+            <div class="col-4 col-md-4 mb-3 grid-item">
+                <img src="https://images.squarespace-cdn.com/content/v1/63c94ecadf6c2031661e8f11/1674575480235-5HTJSYD3E5NRJ4D2C9ZY/ROOM.jpg" data-fancybox="gallery" class="img-fluid" alt="Image 2" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('https://images.squarespace-cdn.com/content/v1/63c94ecadf6c2031661e8f11/1674575480235-5HTJSYD3E5NRJ4D2C9ZY/ROOM.jpg')">
+            </div>
+            <div class="col-4 col-md-4 mb-3 grid-item">
+                <img src="https://images.squarespace-cdn.com/content/v1/63c94ecadf6c2031661e8f11/1684837834471-O7HCKXPOL0PMQSJN7ISS/FEN1.JPG" data-fancybox="gallery" class="img-fluid" alt="Image 1" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('https://images.squarespace-cdn.com/content/v1/63c94ecadf6c2031661e8f11/1674575480235-5HTJSYD3E5NRJ4D2C9ZY/ROOM.jpg')">
+            </div>
+            <div class="col-4 col-md-4 mb-3 grid-item">
+                <img src="https://images.squarespace-cdn.com/content/v1/63c94ecadf6c2031661e8f11/1674575480235-5HTJSYD3E5NRJ4D2C9ZY/ROOM.jpg" data-fancybox="gallery" class="img-fluid" alt="Image 2" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('https://images.squarespace-cdn.com/content/v1/63c94ecadf6c2031661e8f11/1674575480235-5HTJSYD3E5NRJ4D2C9ZY/ROOM.jpg')">
+            </div>
+            <div class="col-4 col-md-4 mb-3 grid-item">
+                <img src="https://images.squarespace-cdn.com/content/v1/63c94ecadf6c2031661e8f11/1684837834471-O7HCKXPOL0PMQSJN7ISS/FEN1.JPG" data-fancybox="gallery" class="img-fluid" alt="Image 1" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('https://images.squarespace-cdn.com/content/v1/63c94ecadf6c2031661e8f11/1674575480235-5HTJSYD3E5NRJ4D2C9ZY/ROOM.jpg')">
+            </div>
+            <div class="col-4 col-md-4 mb-3 grid-item">
+                <img src="https://images.squarespace-cdn.com/content/v1/63c94ecadf6c2031661e8f11/1674575480235-5HTJSYD3E5NRJ4D2C9ZY/ROOM.jpg" data-fancybox="gallery" class="img-fluid" alt="Image 2" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('https://images.squarespace-cdn.com/content/v1/63c94ecadf6c2031661e8f11/1674575480235-5HTJSYD3E5NRJ4D2C9ZY/ROOM.jpg')">
+            </div>
+
+        </main>
+    </div>
+</div>
+
+<script charset="utf-8">
+// 初始化 Masonry
+document.addEventListener("DOMContentLoaded", function () {
+  const elem = document.querySelector('.grid');
+  new Masonry(elem, {
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-item',
+    percentPosition: true,
+    gutter: 10
+  });
+});
+
+
+Fancybox.bind("[data-fancybox]", {
+  // Your custom options
+});
+</script>
