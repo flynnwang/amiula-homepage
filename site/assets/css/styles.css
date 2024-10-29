@@ -17,3 +17,16 @@
     background-color: #327dc9;
 }
 
+.me-large {
+    margin-left: 10px;
+    background-color: #a0a0a0;
+}
+
+
+.grid {
+    width: 100%; /* Make sure the grid takes up the full width */
+}
+
+.grid-item {
+    width: 32%; 
+}
