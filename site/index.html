@@ -35,11 +35,9 @@ title: Amiula's Homepage
     <div class="col-4 col-md-4 mb-3 grid-item">
         <img src="https://images.squarespace-cdn.com/content/v1/63c94ecadf6c2031661e8f11/1674575480235-5HTJSYD3E5NRJ4D2C9ZY/ROOM.jpg" data-fancybox="gallery" class="img-fluid" alt="Image 2">
     </div>
-
 <div>
 
 <script charset="utf-8">
-// 初始化 Masonry
 document.addEventListener("DOMContentLoaded", function () {
   const elem = document.querySelector('.grid');
   new Masonry(elem, {
@@ -49,11 +47,6 @@ document.addEventListener("DOMContentLoaded", function () {
     gutter: 10
   });
 
-
-Fancybox.bind("[data-fancybox]", {
-  // Your custom options
+  Fancybox.bind("[data-fancybox]", {});
 });
-});
-
-
 </script>

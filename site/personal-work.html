@@ -6,6 +6,41 @@ permalink: /personal-work/
 ---
 
 <div class="grid row">
+
+    {% for w in site.work %}
+    <div class="col-4 col-md-4 mb-3">
+        <div class="card">
+            <a href="{{ w.url }}">
+                <img src="{{ w.thumb_url }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{ w.title }}</h5>
+                </div>
+            </a>
+        </div>
+    </div>
+    {% endfor %}
+
+
+    <div class="col-4 col-md-4 mb-3">
+        <div class="card">
+        <img src="https://images.squarespace-cdn.com/content/v1/63c94ecadf6c2031661e8f11/1674579115735-N3FZ89IQU176PET64FY9/SSS.jpeg?format=750w" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">BBC Earth x INT Rewilding Creativity</h5>
+        </div>
+        </div>
+    </div>
+
+
+    <div class="col-4 col-md-4 mb-3">
+        <div class="card">
+        <img src="https://images.squarespace-cdn.com/content/v1/63c94ecadf6c2031661e8f11/1699892522318-ZEOC6YEHSZQN5W8ICM3L/00.jpg?format=750w" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Gigi the Goat</h5>
+        </div>
+        </div>
+    </div>
+
+
     <div class="col-4 col-md-4 mb-3">
         <div class="card">
         <img src="https://images.squarespace-cdn.com/content/v1/63c94ecadf6c2031661e8f11/1674409676034-NVY21HKO9ABZYELW5IRA/20.jpg?format=750w" class="card-img-top" alt="...">
@@ -33,37 +68,6 @@ permalink: /personal-work/
         </div>
         </div>
     </div>
-
-
-    <div class="col-4 col-md-4 mb-3">
-        <div class="card">
-        <img src="https://images.squarespace-cdn.com/content/v1/63c94ecadf6c2031661e8f11/1674409676034-NVY21HKO9ABZYELW5IRA/20.jpg?format=750w" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">NYT 2022 Debates</h5>
-        </div>
-        </div>
-    </div>
-
-    <div class="col-4 col-md-4 mb-3">
-        <div class="card">
-        <img src="https://images.squarespace-cdn.com/content/v1/63c94ecadf6c2031661e8f11/1674579115735-N3FZ89IQU176PET64FY9/SSS.jpeg?format=750w" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">BBC Earth x INT Rewilding Creativity</h5>
-        </div>
-        </div>
-    </div>
-
-
-    <div class="col-4 col-md-4 mb-3">
-        <div class="card">
-        <img src="https://images.squarespace-cdn.com/content/v1/63c94ecadf6c2031661e8f11/1699892522318-ZEOC6YEHSZQN5W8ICM3L/00.jpg?format=750w" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Gigi the Goat</h5>
-        </div>
-        </div>
-    </div>
-
-    
 
 
 <div>

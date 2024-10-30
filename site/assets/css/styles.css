@@ -31,6 +31,10 @@
     width: 30%; 
 }
 
+.grid-item2 {
+    width: 45%; 
+}
+
 .nav-item > .active {
     color: #FE5B53;
 }

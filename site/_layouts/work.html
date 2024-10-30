@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<h1>{{ page.title }}</h1>
+
+{{ content }}
+
+
+<script charset="utf-8">
+document.addEventListener("DOMContentLoaded", function () {
+  const elem = document.querySelector('.grid');
+  new Masonry(elem, {
+    itemSelector: '.grid-item2',
+    columnWidth: '.grid-sizer',
+    percentPosition: true,
+    gutter: 10
+  });
+
+  Fancybox.bind("[data-fancybox]", {});
+});
+</script>
+
