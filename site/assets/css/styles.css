@@ -28,5 +28,23 @@
 }
 
 .grid-item {
-    width: 32%; 
+    width: 30%; 
+}
+
+.nav-item > .active {
+    color: #FE5B53;
+}
+
+
+.card {
+    border: none;
+}
+
+.card-title {
+    text-align: center;
+    font-weight: normal;
+}
+
+.card-img-top {
+    height: 400px;
 }
