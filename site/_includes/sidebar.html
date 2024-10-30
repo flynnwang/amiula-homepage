@@ -7,26 +7,26 @@
 
             <ul class="nav flex-column">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Home</a>
+                    <a class="nav-link {% if page.url == "/" %}active{% endif %}" href="/">Home</a>
                 </li>
 
                 <hr>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Personl work</a>
+                    <a class="nav-link {% if page.url == "/personal-work/" %}active{% endif %}" href="/personal-work">Personl work</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Sketchbook</a>
+                    <a class="nav-link {% if page.url == "/sketchbook/" %}active{% endif %}" href="/sketchbook/">Sketchbook</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Printmaking</a>
+                    <a class="nav-link {% if page.url == "/printmaking/" %}active{% endif %}" href="/printmaking/">Printmaking</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item {% if page.url == "/comics/" %}active{% endif %}" href="/comics/">
                     <a class="nav-link" href="#">Comics</a>
                 </li>
 
                 <hr>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About / Contact</a>
+                    <a class="nav-link {% if page.url == "/about/" %}active{% endif %}" href="/about/">About / Contact</a>
                 </li>
             </ul>
 
