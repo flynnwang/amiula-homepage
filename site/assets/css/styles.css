@@ -1,10 +1,29 @@
+body {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: normal;
+}
+
 .sidebar {
-    height: 100vh;
+    height: 100%;
     position: fixed;
     top: 0;
     left: 0;
     padding-top: 1rem;
     background-color: #f8f9fa;
+}
+
+.sidebar .flex-column {
+    margin-top: 50px;
+}
+
+.social-bar .bi {
+    font-size: 20px;
+}
+
+.social-bar .bi-behance {
+    margin: 0 30px;
 }
 
 .content {
