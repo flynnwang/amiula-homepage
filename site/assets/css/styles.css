@@ -46,12 +46,13 @@ body {
     width: 100%; /* Make sure the grid takes up the full width */
 }
 
+.grid-sizer,
 .grid-item {
-    width: 30%; 
+    width: 30%;
 }
 
 .grid-item2 {
-    width: 45%; 
+    width: 45%;
 }
 
 .nav-item > .active {
