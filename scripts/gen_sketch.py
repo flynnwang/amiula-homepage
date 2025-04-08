@@ -34,7 +34,7 @@ def main():
 
       sketch.append({
           "name": name,
-          "url": path,
+          "url": "/" + path,
       })
 
   j = {"sketch": sketch}

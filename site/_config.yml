@@ -60,3 +60,6 @@ plugins:
 collections:
   work:
     output: true
+
+
+personal_work_dir: /assets/img/personal_work

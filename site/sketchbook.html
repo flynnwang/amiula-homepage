@@ -1,9 +1,9 @@
 ---
 layout: default
 
-title: Amiula's Homepage
+title: Amiula's Sketch
 ---
-{% assign latest_sketch = site.data.sketch.sketch | reverse | slice: 0, 24 %}
+{% assign latest_sketch = site.data.sketch.sketch %}
 
 <div class="grid row">
     {% for s in latest_sketch %}
