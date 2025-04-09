@@ -1,5 +1,28 @@
+@import url(https://db.onlinewebfonts.com/c/4e040acb355e0238362fcea498579b5c?family=Alibaba-PuHuiTi-R);
+@import url(https://db.onlinewebfonts.com/c/7c534f5f0b44f2e50844eac35642e62a?family=Alibaba-PuHuiTi-B);
+
+@font-face {
+    font-family: "Alibaba-PuHuiTi-R";
+    src: url("https://db.onlinewebfonts.com/t/4e040acb355e0238362fcea498579b5c.eot");
+    src: url("https://db.onlinewebfonts.com/t/4e040acb355e0238362fcea498579b5c.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/4e040acb355e0238362fcea498579b5c.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/4e040acb355e0238362fcea498579b5c.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/4e040acb355e0238362fcea498579b5c.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/4e040acb355e0238362fcea498579b5c.svg#Alibaba-PuHuiTi-R")format("svg");
+}
+
+@font-face {
+    font-family: "Alibaba-PuHuiTi-B";
+    src: url("https://db.onlinewebfonts.com/t/7c534f5f0b44f2e50844eac35642e62a.eot");
+    src: url("https://db.onlinewebfonts.com/t/7c534f5f0b44f2e50844eac35642e62a.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/7c534f5f0b44f2e50844eac35642e62a.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/7c534f5f0b44f2e50844eac35642e62a.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/7c534f5f0b44f2e50844eac35642e62a.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/7c534f5f0b44f2e50844eac35642e62a.svg#Alibaba-PuHuiTi-B")format("svg");
+}
+
 body {
-    font-family: "Raleway", sans-serif;
+    font-family: "Alibaba-PuHuiTi-R", sans-serif;
     font-weight: 400;
     font-size: 16px;
     font-style: normal;
@@ -16,6 +39,10 @@ body {
 
 .sidebar .flex-column {
     margin-top: 50px;
+}
+
+.sidebar .nav-link {
+    font-size: 23px;
 }
 
 .social-bar .bi {
@@ -54,9 +81,6 @@ body {
     width: 45%;
 }
 
-.nav-item > .active {
-    color: #FE5B53;
-}
 
 
 .card {
@@ -70,4 +94,32 @@ body {
 
 .card-img-top {
     height: 400px;
+}
+
+
+.nav .nav-link {
+    color: #333333;
+}
+
+.nav-item > .active {
+    color: #FE5B53 !important;
+}
+
+
+.card-title {
+    font-size: 14px;
+    color: #666666;
+}
+
+.card a {
+    text-decoration: none !important;
+}
+
+.email-address {
+    font-family: Alibaba-PuHuiTi-B;
+    font-weight: bold;
+}
+
+.about p {
+    font-size: 20px;
 }
