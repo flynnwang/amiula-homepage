@@ -5,29 +5,31 @@ title: Amiula's Homepage
 ---
 {% assign latest_sketch = site.data.sketch.sketch | reverse | slice: 0, 24 %}
 
+<div class="container-fluid">
 <div class="grid row">
+    <div class="grid-sizer col-4"></div>
+
+    <div class="row">
     {% for s in latest_sketch %}
-        <div class="col-4 col-md-4 mb-3 grid-item grid-sizer">
+        <div class="col-4 grid-item">
             <img src="{{ s.url }}" data-fancybox="gallery" class="img-fluid" alt="{{ s.name }}">
         </div>
     {% endfor %}
-<div>
+    </div>
+</div>
+</div>
 
 <script charset="utf-8">
 document.addEventListener("DOMContentLoaded", function () {
-  const elem = document.querySelector('.grid');
-  var $grid = new Masonry(elem, {
+  var $grid = $('.grid').masonry({
     itemSelector: '.grid-item',
     columnWidth: '.grid-sizer',
     percentPosition: true,
-    gutter: 10
   });
 
-
-    // Ensure items are positioned after all images are loaded
-    imagesLoaded('.grid', function() {
-        $grid.layout();
-    });
+  $grid.imagesLoaded().progress(function() {
+    $grid.masonry('layout');
+  });
 
   Fancybox.bind("[data-fancybox]", {});
 });

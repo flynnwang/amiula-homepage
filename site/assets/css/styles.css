@@ -45,6 +45,12 @@ body {
     font-size: 23px;
 }
 
+
+.social-bar {
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
 .social-bar .bi {
     font-size: 20px;
 }
@@ -68,20 +74,9 @@ body {
 }
 
 
-.grid {
-    width: 100%; /* Make sure the grid takes up the full width */
+.nav {
+    margin-left: 22px;
 }
-
-.grid-sizer,
-.grid-item {
-    width: 30%;
-}
-
-.grid-item2 {
-    width: 45%;
-}
-
-
 
 .card {
     border: none;
@@ -90,12 +85,17 @@ body {
 .card-title {
     text-align: center;
     font-weight: normal;
+    font-size: 14px;
+    color: #666666;
 }
 
 .card-img-top {
     height: 400px;
 }
 
+.card a {
+    text-decoration: none !important;
+}
 
 .nav .nav-link {
     color: #333333;
@@ -103,16 +103,6 @@ body {
 
 .nav-item > .active {
     color: #FE5B53 !important;
-}
-
-
-.card-title {
-    font-size: 14px;
-    color: #666666;
-}
-
-.card a {
-    text-decoration: none !important;
 }
 
 .email-address {

@@ -12,7 +12,7 @@ works:
 
 <div class="grid row">
     {% for w in page.works %}
-    <div class="col-6 col-md-6 grid-item2 grid-sizer">
+    <div class="col-6 col-md-6">
         <img src="{{ site.personal_work_dir }}/{{ page.work_dir }}/{{ w }}" data-fancybox="gallery" class="img-fluid" alt="Image 1">
     </div>
     {% endfor %}
