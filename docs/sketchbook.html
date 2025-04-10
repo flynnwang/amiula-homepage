@@ -1,0 +1,68 @@
+---
+layout: default
+
+title: Amiula's Sketch
+permalink: /sketchbook/
+---
+{% assign latest_sketch = site.data.sketch_by_year.sketch %}
+{% assign sketch_years = site.data.sketch_by_year.sketch_years | sort | reverse %}
+
+<ul class="nav justify-content-left">
+    <nav class="nav">
+        {% for year in sketch_years %}
+        <li class="nav-item">
+            <a class="nav-link {% if forloop.first %} active {% endif %}"
+               id="#sketch-tab-{{ year }}"
+               data-bs-toggle="tab"
+               data-bs-target="#sketch-tab-pane-{{ year }}"
+               aria-controls="sketch-tab-pane-{{ year }}"
+               {% if forloop.first %} aria-selected="true"{% endif %}
+                                      role="tab"  href="#">{{ year }}</a>
+        </li>
+        {% endfor %}
+    </nav>
+</ul>
+
+<div class="tab-content" id="myTabContent">
+{% for year in sketch_years %}
+<div class="tab-pane fade container-fluid {% if forloop.first %} show active {% endif %}" id="sketch-tab-pane-{{ year }}" role="tabpanel" aria-labelledby="#sketch-tab-{{ year }}">
+<div class="grid">
+    <div class="grid-sizer col-4"></div>
+    <div class="row">
+        {% for s in latest_sketch[year] %}
+        <div class="col-4 grid-item">
+            <img src="{{ s.url }}" data-fancybox="gallery" class="img-fluid" alt="{{ s.name }}">
+        </div>
+        {% endfor %}
+    </div>
+</div>
+</div>
+{% endfor %}
+</div>
+
+<script charset="utf-8">
+document.addEventListener("DOMContentLoaded", function () {
+  var $grid = $('.grid').masonry({
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-sizer',
+    percentPosition: true,
+  });
+
+  $grid.imagesLoaded().progress(function() {
+    $grid.masonry('layout');
+  });
+
+  // Re-layout after tab is shown
+  const tabEl = document.querySelectorAll('a[data-bs-toggle="tab"]');
+  tabEl.forEach(el => {
+    el.addEventListener('shown.bs.tab', function (event) {
+      // Timeout ensures the tab pane is fully shown before layout
+      setTimeout(() => {
+        $grid.masonry('layout');
+      }, 50); // tweak the delay if needed
+    });
+  });
+
+  Fancybox.bind("[data-fancybox]", {});
+});
+</script>
