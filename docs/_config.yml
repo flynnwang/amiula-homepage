@@ -61,5 +61,8 @@ collections:
   work:
     output: true
 
+#personal_work_dir: /assets/img/personal_work
+personal_work_dir: https://amiula.imgix.net/personal_work
 
-personal_work_dir: /assets/img/personal_work
+
+imgix_options: ?auto=format,compress

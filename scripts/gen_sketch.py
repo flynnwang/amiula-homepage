@@ -8,7 +8,10 @@ $ python3 ../scripts/gen_sketch.py assets/img/sketch
 
 from pathlib import Path
 import json
+import os
 import sys
+
+IMGIX_BASE = "https://amiula.imgix.net/"
 
 
 def main():
@@ -30,11 +33,14 @@ def main():
 
       path = str(file)
 
-      name = '-'.join(path.split('/')[-2:])
+      parts = path.split('/')
+      name = '-'.join(parts[-2:])
+      imgix_url = os.path.join(IMGIX_BASE, "/".join(parts[3:]))
 
       sketch.append({
           "name": name,
-          "url": "/" + path,
+          # "url": "/" + path,
+          "url": imgix_url,
       })
 
   j = {"sketch": sketch}

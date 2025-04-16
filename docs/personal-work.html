@@ -10,7 +10,7 @@ permalink: /personal-work/
     {% for w in reversed_work %}
     <div class="col-4 col-md-4 mb-3">
         <div class="card">
-            <a href="{{ w.url }}">
+            <a href="{{ w.url }}{{ site.imgix_options }}">
                 <img src="{{ site.personal_work_dir }}/{{ w.work_dir }}/{{ w.thumb_name }}" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">{{ w.title }}</h5>

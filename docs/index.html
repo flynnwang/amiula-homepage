@@ -12,7 +12,7 @@ title: Amiula's Homepage
     <div class="row">
     {% for s in latest_sketch %}
         <div class="col-4 grid-item">
-            <img src="{{ s.url }}" data-fancybox="gallery" class="img-fluid" alt="{{ s.name }}">
+            <img src="{{ s.url }}{{ site.imgix_options }}" data-fancybox="gallery" class="img-fluid" alt="{{ s.name }}">
         </div>
     {% endfor %}
     </div>

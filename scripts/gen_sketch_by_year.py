@@ -9,7 +9,10 @@ $ python3 ../scripts/gen_sketch_by_year.py assets/img/sketch
 from collections import defaultdict
 from pathlib import Path
 import json
+import os
 import sys
+
+IMGIX_BASE = "https://amiula.imgix.net/"
 
 
 def main():
@@ -32,13 +35,20 @@ def main():
       path = str(file)
 
       parts = path.split('/')
+
       year = parts[-2]
       name = '-'.join(parts[-2:])
+      path = "/".join(parts[1:])
+      imgix_url = os.path.join(IMGIX_BASE, "/".join(parts[3:]))
 
-      sketch[year].append({
+      item = {
           "name": name,
-          "url": "/" + path,
-      })
+          "url": imgix_url,
+          # "url": "/" + path,
+          # "imgix_url": imgix_url,
+      }
+      sketch[year].append(item)
+      # print(item)
 
   j = {
       "sketch": sketch,
