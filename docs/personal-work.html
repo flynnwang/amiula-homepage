@@ -11,7 +11,9 @@ permalink: /personal-work/
     <div class="col-4 col-md-4 mb-3">
         <div class="card">
             <a href="{{ w.url }}{{ site.imgix_options }}">
-                <img src="{{ site.personal_work_dir }}/{{ w.work_dir }}/{{ w.thumb_name }}" class="card-img-top" alt="...">
+                <div class="card-img-container">
+                    <img src="{{ site.personal_work_dir }}/{{ w.work_dir }}/{{ w.thumb_name }}" class="card-img-top" alt="...">
+                </div>
                 <div class="card-body">
                     <h5 class="card-title">{{ w.title }}</h5>
                 </div>

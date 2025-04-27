@@ -1,6 +1,6 @@
 
 <div class="row">
-    <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+    <nav class="col-md-3 col-lg-2 d-md-block sidebar">
         <div class="position-sticky">
 
             <img class="bi pe-none me-2" width="190" height="190" src="/assets/img/logo.jpg" alt=""/>
@@ -18,10 +18,10 @@
                     <a class="nav-link {% if page.url == "/sketchbook/" %}active{% endif %}" href="/sketchbook/">Sketchbook</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {% if page.url == "/printmaking/" %}active{% endif %}" href="/printmaking/">Printmaking</a>
+                    {% comment %}<a class="nav-link {% if page.url == "/printmaking/" %}active{% endif %}" href="/printmaking/">Printmaking</a>{% endcomment %}
                 </li>
-                <li class="nav-item {% if page.url == "/comics/" %}active{% endif %}" href="/comics/">
-                    <a class="nav-link" href="#">Comics</a>
+                <li class="nav-item">
+                    {% comment %}<a class="nav-link {% if page.url == "/comics/" %}active{% endif %}" href="/comics/">Comics</a>{% endcomment %}
                 </li>
 
                 <hr>
@@ -36,9 +36,13 @@
                             <i class="bi bi-instagram"></i>
                         </a>
 
-                        <i class="bi bi-behance"></i>
+                        <a href="{{ site.behance_url }}" target="_blank">
+                            <i class="bi bi-behance"></i>
+                        </a>
 
-                        <i class="bi bi-r-square"></i>
+                        <a href="{{ site.xiaohongshu_url }}" target="_blank">
+                            <i class="bi bi-r-square"></i>
+                        </a>
                 </div>
             </div>
 

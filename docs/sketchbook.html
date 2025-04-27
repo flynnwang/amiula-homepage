@@ -28,13 +28,11 @@ permalink: /sketchbook/
 <div class="tab-pane fade container-fluid {% if forloop.first %} show active {% endif %}" id="sketch-tab-pane-{{ year }}" role="tabpanel" aria-labelledby="#sketch-tab-{{ year }}">
 <div class="grid">
     <div class="grid-sizer col-4"></div>
-    <div class="row">
-        {% for s in latest_sketch[year] %}
-        <div class="col-4 grid-item">
-            <img src="{{ s.url }}{{ site.imgix_options }}" data-fancybox="gallery" class="img-fluid" alt="{{ s.name }}">
-        </div>
-        {% endfor %}
+    {% for s in latest_sketch[year] %}
+    <div class="col-4 grid-item">
+        <img src="{{ s.url }}{{ site.imgix_options }}" data-fancybox="gallery" class="img-fluid" alt="{{ s.name }}">
     </div>
+    {% endfor %}
 </div>
 </div>
 {% endfor %}
@@ -45,7 +43,6 @@ document.addEventListener("DOMContentLoaded", function () {
   var $grid = $('.grid').masonry({
     itemSelector: '.grid-item',
     columnWidth: '.grid-sizer',
-    percentPosition: true,
   });
 
   $grid.imagesLoaded().progress(function() {
